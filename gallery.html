@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Zen Inspirations Gallery | The Art of Stillness</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#11d473",
+              "background-light": "#f6f8f7",
+              "background-dark": "#102219",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+      .masonry-grid {
+        column-count: 3;
+        column-gap: 1.5rem;
+      }
+      .masonry-item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      @media (max-width: 1024px) {
+        .masonry-grid {
+          column-count: 2;
+        }
+      }
+      @media (max-width: 640px) {
+        .masonry-grid {
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display"
+  >
+    <!-- Header / Nav -->
+    <div
+      class="w-full border-b border-slate-200 dark:border-white/10 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+    >
+      <div
+        class="max-w-[1280px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-10">
+          <div class="flex items-center gap-3">
+            <div class="text-primary size-8">
+              <svg
+                fill="currentColor"
+                viewbox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                ></path>
+              </svg>
+            </div>
+            <h1 class="text-xl font-bold tracking-tight">Zen Inspirations</h1>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Gallery</a
+            >
+            <a
+              class="text-sm font-medium opacity-70 hover:opacity-100 hover:text-primary transition-colors"
+              href="#"
+              >Collections</a
+            >
+            <a
+              class="text-sm font-medium opacity-70 hover:opacity-100 hover:text-primary transition-colors"
+              href="#"
+              >Philosophy</a
+            >
+            <a
+              class="text-sm font-medium opacity-70 hover:opacity-100 hover:text-primary transition-colors"
+              href="#"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center gap-6">
+          <div
+            class="hidden lg:flex items-center bg-slate-100 dark:bg-white/5 rounded-lg px-3 py-1.5 border border-transparent focus-within:border-primary/50 transition-all"
+          >
+            <span class="material-symbols-outlined text-slate-400 text-[20px]"
+              >search</span
+            >
+            <input
+              class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-slate-500"
+              placeholder="Search gallery..."
+              type="text"
+            />
+          </div>
+          <button
+            class="bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold py-2 px-6 rounded-lg transition-all shadow-lg shadow-primary/10"
+          >
+            Inquire Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Page Content -->
+    <main class="max-w-[1280px] mx-auto px-6 lg:px-12 py-12">
+      <!-- Heading Section -->
+      <div class="max-w-3xl mb-12">
+        <h2
+          class="text-4xl lg:text-5xl font-extrabold tracking-tighter mb-4 text-slate-900 dark:text-white"
+        >
+          The Art of Stillness
+        </h2>
+        <p
+          class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-light"
+        >
+          A curated selection of hand-carved stone Buddhas integrated into
+          luxury sanctuaries. Explore the harmonious balance of wood, stone, and
+          spirit.
+        </p>
+      </div>
+      <!-- Filter Chips -->
+      <div class="flex gap-3 mb-10 flex-wrap">
+        <button
+          class="px-5 py-2 rounded-full bg-primary text-background-dark text-sm font-semibold shadow-md"
+        >
+          All Placements
+        </button>
+        <button
+          class="px-5 py-2 rounded-full bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-sm font-medium transition-colors"
+        >
+          Zen Gardens
+        </button>
+        <button
+          class="px-5 py-2 rounded-full bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-sm font-medium transition-colors"
+        >
+          Interior Altars
+        </button>
+        <button
+          class="px-5 py-2 rounded-full bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-sm font-medium transition-colors"
+        >
+          Water Features
+        </button>
+        <button
+          class="px-5 py-2 rounded-full bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-sm font-medium transition-colors"
+        >
+          Meditation Rooms
+        </button>
+        <button
+          class="px-5 py-2 rounded-full bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-sm font-medium transition-colors"
+        >
+          Courtyard Sanctuaries
+        </button>
+      </div>
+      <!-- Masonry Image Grid -->
+      <div class="masonry-grid">
+        <!-- Item 1 -->
+        <div
+          class="masonry-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-white/5"
+        >
+          <img
+            alt="Stone Buddha in lush green garden"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+            data-alt="Granite Buddha statue sitting in a lush mossy garden"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfGyLJNPM16WYyEGg0lX7JLPqCdzB42Zk3s0Fes37c6w_NQPVO0XPNoe4FRuhxADsKnpm4m1CnoqK_R-ShIUcNoJjDcoOhNvxqAZd0coaNTYLhlHLeiny8-WKHfr2pFgeCT4yRSdjDfsEeOpcLbSOTruFb8v595KcD6etIKQclef2pYfL3X2ccY9IHDCEzidzjzAuNXGeTkHmXZ4ugnVHU6igGkeyuua1MLSOS1arMCZd64wiffBD6QVPsIzx-oOwuzorFV6H-VTM"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+          >
+            <p class="text-white font-bold text-lg">Serenity Fountain</p>
+            <p
+              class="text-primary text-xs font-semibold tracking-widest uppercase mt-1"
+            >
+              Zen Garden
+            </p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div
+          class="masonry-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-white/5"
+        >
+          <img
+            alt="Minimalist indoor altar with buddha"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+            data-alt="Black basalt buddha on a minimalist wooden altar"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBIq8T-JEoeLm8ijN6Ed85ldVIXNB353xtLc4zDLm8td1kcYO_ZB9q82fPDMqxPtkXFUqVmMjVfqwDW3qUXNV1kCO8-qtrWlobjROKsxPiX0Q1yQXDTdAqiyWTXwmEh874W0f6I41bDGkYuvrKdLy_NsHr-rXaC2Vs_0HgdD1G5wFGXoh6qkJXy-oA3obC4XG06Bl1JLWKNQiI2zw62zza1t_8kvh9zRBnmaFyiI6r9YxXRuLBnKKMF-2hhhVKBlauNioQekpxZaE"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+          >
+            <p class="text-white font-bold text-lg">Midnight Altar</p>
+            <p
+              class="text-primary text-xs font-semibold tracking-widest uppercase mt-1"
+            >
+              Interior
+            </p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div
+          class="masonry-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-white/5"
+        >
+          <img
+            alt="Buddha statue near waterfall"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+            data-alt="Stone Buddha head near a cascading waterfall feature"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc7yBpRBbEzUFjn6YB-aFga6ZSuMPvQsXTG5W5IuPEwLMbS5X7g4NnyBIgWEQrRZxRkJZDWIGM68b0TUxxa90bPW10B6zPJH28VUzz34z47KBAIf4TqduBu9nZAElzSB3D3-AoiW04olEsGSpimwL0Ha67_oZRF8EbFJHCb-ASafRIwUwHKl_eX8AVn7PgmrzsannIJFPfCxQBEcR_QU2-yl1UBS_jfnCYvVVm_1xc5if6UU_oeEhOfA2zRk10Xd_os6pCeCm7cmM"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+          >
+            <p class="text-white font-bold text-lg">Waterfall Guardian</p>
+            <p
+              class="text-primary text-xs font-semibold tracking-widest uppercase mt-1"
+            >
+              Water Feature
+            </p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div
+          class="masonry-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-white/5"
+        >
+          <img
+            alt="Buddha in meditation room"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+            data-alt="Large stone buddha in a sunlit meditation room"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn1TG_GKhOvAkjBelCdXXhkU_r93ENfJzyLDe2vN8eVmpllmlsAVn2IK3SZ7BSYLY0M1JDKHMsztfj0BoMln5oEsn57RvVDNWjCkJhuB1CBaGUc_KDsGImNbPWKOdbK4Wfs42yochSoopO0Jhwx1_q1hc7_S1bDUS4oO3YUz4ThE37CmxjB_EpyQ2hMv_gEq_3nA4yTRokJ-rC3tYg32Ze24xYnT7yXnqQVRLQS9RxPA-w1RTr3R7sYbk86ZToQ3M6F3b7jpYmfhs"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+          >
+            <p class="text-white font-bold text-lg">The Eternal Seeker</p>
+            <p
+              class="text-primary text-xs font-semibold tracking-widest uppercase mt-1"
+            >
+              Meditation Room
+            </p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div
+          class="masonry-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-white/5"
+        >
+          <img
+            alt="Stone pathway with small statues"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+            data-alt="Mossy stone pathway leading to a small buddha statue"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6VLwBqeUT_pQidhVoQbNP-3lZU24biEsummcYkTtGzUdQaVJbLgmXTG2Yd9P-MC5ieECISNtEG0BBNcj6evYzhWG3GZIYwiyrbVn8WE8x60qV0Lt6JifJUylre5NJ86UVhD9T0wjMsCWbGDBpoqfozTMVsjTKwfIpGo5155nv0i2MAApGYmNJ4RmaQefnBAk676Zz-GKbpebMMO6-zWBQXjMb_iLzMwcksSHSdajyQfkEQWlkK-cEdqwcbCwvEkX_lfdWUEBZmo"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+          >
+            <p class="text-white font-bold text-lg">Mossy Path</p>
+            <p
+              class="text-primary text-xs font-semibold tracking-widest uppercase mt-1"
+            >
+              Garden Path
+            </p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div
+          class="masonry-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-white/5"
+        >
+          <img
+            alt="Close up of stone buddha face"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+            data-alt="Macro detail of hand-carved stone buddha face"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOV_XaoEhpDSAVQK97vbOuAmYMEC2TbyWova0KMAEUZzeccmlD6j9bdXOjFIBg8VrwMBcT1uW5KPvTtXYWC2_gnOYfAw3B1VbW23N7z8rVpEYeMow6JJH7IjM9RurByQmY2WF6HhDrYNPeUKtUWGoptACSKf9yXv8Rpl8BipYbt73j62YF02BcbHvwiWg54mICw1rTkZoUYtXqY-OJYgREDI96oE9VoP7NHJG7-xjamdwtu0mDCZLAfy5R8PX7a-afPVXDn5x9xdQ"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+          >
+            <p class="text-white font-bold text-lg">Carving Detail</p>
+            <p
+              class="text-primary text-xs font-semibold tracking-widest uppercase mt-1"
+            >
+              Artisan Craft
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- CTA Section -->
+      <div
+        class="mt-20 py-16 px-8 rounded-3xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute -top-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
+        ></div>
+        <h3 class="text-3xl lg:text-4xl font-bold mb-4 relative z-10">
+          Bring Tranquility to Your Space
+        </h3>
+        <p
+          class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8 relative z-10 leading-relaxed"
+        >
+          Our artisans hand-carve each piece to align with your sanctuary's
+          energy. Let us help you find the perfect stone placement for your home
+          or landscape.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 relative z-10">
+          <button
+            class="bg-primary text-background-dark font-bold px-8 py-3 rounded-lg hover:shadow-xl hover:shadow-primary/20 transition-all"
+          >
+            View Full Collections
+          </button>
+          <button
+            class="bg-slate-900 dark:bg-white text-white dark:text-background-dark font-bold px-8 py-3 rounded-lg transition-all"
+          >
+            Request Consultation
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-slate-100 dark:bg-[#0a1610] border-t border-slate-200 dark:border-white/5 mt-20"
+    >
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="text-primary size-6">
+                <svg
+                  fill="currentColor"
+                  viewbox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="text-lg font-bold">Zen Inspirations</h4>
+            </div>
+            <p class="text-sm text-slate-500 leading-relaxed mt-2">
+              Specializing in premium hand-carved stone Buddhist statuary for
+              luxury estates and private meditation spaces. Designed with Feng
+              Shui principles.
+            </p>
+          </div>
+          <div>
+            <h5
+              class="font-bold mb-6 text-sm uppercase tracking-widest text-primary"
+            >
+              Sculptures
+            </h5>
+            <ul class="space-y-4 text-sm text-slate-500">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Sitting Amitabha</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Standing Avalokiteshvara</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Basalt Garden Lanterns</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Granite Water Basins</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5
+              class="font-bold mb-6 text-sm uppercase tracking-widest text-primary"
+            >
+              Services
+            </h5>
+            <ul class="space-y-4 text-sm text-slate-500">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Feng Shui Consultation</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Custom Stone Carving</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >White-Glove Installation</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Garden Design Integration</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5
+              class="font-bold mb-6 text-sm uppercase tracking-widest text-primary"
+            >
+              Our Studio
+            </h5>
+            <p class="text-sm text-slate-500 mb-4" data-location="Kyoto, Japan">
+              122 Stonecutter's Lane,<br />
+              Higashiyama District, Kyoto
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="size-8 rounded-lg bg-slate-200 dark:bg-white/5 flex items-center justify-center hover:bg-primary transition-colors group"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-sm group-hover:text-background-dark"
+                  >public</span
+                >
+              </a>
+              <a
+                class="size-8 rounded-lg bg-slate-200 dark:bg-white/5 flex items-center justify-center hover:bg-primary transition-colors group"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-sm group-hover:text-background-dark"
+                  >mail</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-200 dark:border-white/5 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-xs text-slate-500">
+            © 2024 Zen Inspirations Gallery. All rights reserved.
+          </p>
+          <div class="flex gap-8 text-xs text-slate-400">
+            <a class="hover:text-primary" href="#">Privacy Policy</a>
+            <a class="hover:text-primary" href="#">Shipping &amp; Handling</a>
+            <a class="hover:text-primary" href="#">SEO Keywords</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

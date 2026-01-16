@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stone Buddha Collection Listing</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#11d473",
+              "background-light": "#f6f8f7",
+              "background-dark": "#102219",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+      .jade-glow:hover {
+        box-shadow: 0 0 20px rgba(17, 212, 115, 0.15);
+        border-color: rgba(17, 212, 115, 0.4);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #283930;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen"
+  >
+    <!-- Top Navigation Bar -->
+    <header
+      class="sticky top-0 z-50 w-full border-b border-solid border-emerald-900/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4"
+    >
+      <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-10">
+          <div class="flex items-center gap-3">
+            <div class="text-primary">
+              <span class="material-symbols-outlined text-3xl"
+                >filter_vintage</span
+              >
+            </div>
+            <h2 class="text-xl font-extrabold tracking-tight uppercase">
+              Zen Stone
+            </h2>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Philosophy</a
+            >
+            <a
+              class="text-sm font-medium text-primary border-b-2 border-primary pb-1"
+              href="#"
+              >Collection</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Bespoke</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="/contact.html"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <div
+            class="hidden sm:flex items-center bg-emerald-900/10 dark:bg-emerald-900/30 rounded-lg px-3 py-1.5 border border-emerald-800/20"
+          >
+            <span class="material-symbols-outlined text-slate-400 text-xl mr-2"
+              >search</span
+            >
+            <input
+              class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-slate-500"
+              placeholder="Find your harmony..."
+              type="text"
+            />
+          </div>
+          <button
+            class="p-2 rounded-lg bg-emerald-900/10 dark:bg-emerald-900/30 hover:bg-primary/20 text-primary transition-all"
+          >
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+          <button
+            class="md:hidden p-2 rounded-lg bg-emerald-900/10 dark:bg-emerald-900/30"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-[1440px] mx-auto px-6 lg:px-20 py-8">
+      <!-- Breadcrumbs -->
+      <nav
+        class="flex items-center gap-2 mb-8 text-sm text-slate-500 dark:text-emerald-500/60 font-medium"
+      >
+        <a class="hover:text-primary transition-colors" href="#">Home</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <a class="hover:text-primary transition-colors" href="#">Statues</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <span class="text-slate-900 dark:text-slate-100"
+          >Buddha Collection</span
+        >
+      </nav>
+      <!-- Page Heading -->
+      <div class="mb-10">
+        <h1 class="text-4xl lg:text-5xl font-black tracking-tight mb-4">
+          Stone Buddha Statue Collection
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-emerald-100/60 max-w-2xl">
+          Meticulously hand-carved spiritual masterpieces designed to bring
+          architectural harmony and Feng Shui balance to your sacred space.
+        </p>
+      </div>
+      <!-- Layout Grid -->
+      <div class="flex flex-col lg:flex-row gap-10">
+        <!-- Sidebar Navigation/Filters -->
+        <aside class="w-full lg:w-72 shrink-0">
+          <div
+            class="sticky top-28 space-y-8 bg-emerald-950/20 dark:bg-emerald-900/10 p-6 rounded-xl border border-emerald-900/10"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3
+                  class="text-sm font-bold uppercase tracking-wider text-primary"
+                >
+                  Refine Gallery
+                </h3>
+                <button
+                  class="text-xs font-semibold text-slate-500 hover:text-primary transition-colors"
+                >
+                  Clear All
+                </button>
+              </div>
+              <!-- Filter Groups -->
+              <div class="space-y-6">
+                <!-- Category -->
+                <div>
+                  <button
+                    class="flex items-center justify-between w-full text-left mb-3 group"
+                  >
+                    <span class="text-sm font-semibold">Buddha Type</span>
+                    <span
+                      class="material-symbols-outlined text-sm transition-transform group-hover:translate-y-0.5"
+                      >expand_more</span
+                    >
+                  </button>
+                  <div class="space-y-2">
+                    <label class="flex items-center gap-3 cursor-pointer group">
+                      <div
+                        class="w-4 h-4 rounded border border-emerald-500 flex items-center justify-center bg-primary text-background-dark"
+                      >
+                        <span
+                          class="material-symbols-outlined text-xs font-bold"
+                          >check</span
+                        >
+                      </div>
+                      <span
+                        class="text-sm text-slate-400 group-hover:text-white"
+                        >Shakyamuni</span
+                      >
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer group">
+                      <div
+                        class="w-4 h-4 rounded border border-emerald-500/50 flex items-center justify-center"
+                      ></div>
+                      <span
+                        class="text-sm text-slate-400 group-hover:text-white"
+                        >Avalokiteshvara</span
+                      >
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer group">
+                      <div
+                        class="w-4 h-4 rounded border border-emerald-500/50 flex items-center justify-center"
+                      ></div>
+                      <span
+                        class="text-sm text-slate-400 group-hover:text-white"
+                        >Amitabha</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <!-- Size -->
+                <div>
+                  <button
+                    class="flex items-center justify-between w-full text-left mb-3 group"
+                  >
+                    <span class="text-sm font-semibold">Size Range</span>
+                    <span class="material-symbols-outlined text-sm"
+                      >expand_more</span
+                    >
+                  </button>
+                  <div class="space-y-2">
+                    <label class="flex items-center gap-3 cursor-pointer group">
+                      <div
+                        class="w-4 h-4 rounded border border-emerald-500/50 flex items-center justify-center"
+                      ></div>
+                      <span
+                        class="text-sm text-slate-400 group-hover:text-white"
+                        >Desktop (6"-12")</span
+                      >
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer group">
+                      <div
+                        class="w-4 h-4 rounded border border-emerald-500 flex items-center justify-center bg-primary text-background-dark"
+                      >
+                        <span
+                          class="material-symbols-outlined text-xs font-bold"
+                          >check</span
+                        >
+                      </div>
+                      <span
+                        class="text-sm text-slate-400 group-hover:text-white"
+                        >Indoor (18"-36")</span
+                      >
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer group">
+                      <div
+                        class="w-4 h-4 rounded border border-emerald-500/50 flex items-center justify-center"
+                      ></div>
+                      <span
+                        class="text-sm text-slate-400 group-hover:text-white"
+                        >Garden (48"+)</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <!-- Purpose -->
+                <div>
+                  <button
+                    class="flex items-center justify-between w-full text-left mb-3 group"
+                  >
+                    <span class="text-sm font-semibold">Feng Shui Intent</span>
+                    <span class="material-symbols-outlined text-sm"
+                      >expand_more</span
+                    >
+                  </button>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button
+                      class="text-xs px-2 py-1.5 rounded bg-emerald-900/20 border border-emerald-800/40 hover:bg-primary hover:text-background-dark transition-all"
+                    >
+                      Peace
+                    </button>
+                    <button
+                      class="text-xs px-2 py-1.5 rounded bg-emerald-900/20 border border-emerald-800/40 hover:bg-primary hover:text-background-dark transition-all"
+                    >
+                      Wealth
+                    </button>
+                    <button
+                      class="text-xs px-2 py-1.5 rounded bg-emerald-900/20 border border-emerald-800/40 hover:bg-primary hover:text-background-dark transition-all"
+                    >
+                      Health
+                    </button>
+                    <button
+                      class="text-xs px-2 py-1.5 rounded bg-emerald-900/20 border border-emerald-800/40 hover:bg-primary hover:text-background-dark transition-all"
+                    >
+                      Wisdom
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="w-full py-3 bg-primary text-background-dark font-bold rounded-lg hover:shadow-[0_0_15px_rgba(17,212,115,0.4)] transition-all flex items-center justify-center gap-2"
+            >
+              <span class="material-symbols-outlined text-sm">filter_alt</span>
+              Apply Filters
+            </button>
+          </div>
+        </aside>
+        <!-- Main Product Grid -->
+        <div class="flex-1">
+          <!-- Chips / Active Filters -->
+          <div class="flex flex-wrap gap-3 mb-6">
+            <button
+              class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-xs font-medium text-primary hover:bg-primary/20 transition-all"
+            >
+              Shakyamuni
+              <span class="material-symbols-outlined text-sm">close</span>
+            </button>
+            <button
+              class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-xs font-medium text-primary hover:bg-primary/20 transition-all"
+            >
+              Indoor Size
+              <span class="material-symbols-outlined text-sm">close</span>
+            </button>
+            <button
+              class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-xs font-medium text-primary hover:bg-primary/20 transition-all"
+            >
+              Jade Material
+              <span class="material-symbols-outlined text-sm">close</span>
+            </button>
+          </div>
+          <!-- Sort & Results count -->
+          <div
+            class="flex items-center justify-between mb-8 pb-4 border-b border-emerald-900/10"
+          >
+            <p class="text-sm font-medium text-slate-500">
+              Showing <span class="text-slate-100">18</span> of
+              <span class="text-slate-100">42</span> statues
+            </p>
+            <div class="flex items-center gap-2">
+              <span
+                class="text-xs uppercase tracking-widest text-slate-500 font-bold"
+                >Sort by</span
+              >
+              <select
+                class="bg-transparent border-none text-sm font-semibold focus:ring-0 cursor-pointer"
+              >
+                <option>Most Revered</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>New Arrivals</option>
+              </select>
+            </div>
+          </div>
+          <!-- Product Card Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="group flex flex-col bg-background-light dark:bg-emerald-950/10 border border-emerald-900/10 rounded-xl overflow-hidden jade-glow transition-all duration-300"
+            >
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Dark grey stone sitting Buddha statue with calm expression"
+                  src="tuong_quan_am.webp"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="px-3 py-1 bg-background-dark/80 backdrop-blur text-primary text-[10px] uppercase font-black tracking-widest rounded border border-primary/30"
+                    >Limited Edition</span
+                  >
+                </div>
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3
+                  class="text-lg font-bold mb-1 group-hover:text-primary transition-colors"
+                >
+                  Eternal Peace Shakyamuni
+                </h3>
+                <p class="text-xs italic text-slate-500 mb-4">
+                  Promotes mindfulness and deep inner meditation.
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xl font-black">$1,450</span>
+                  <button
+                    class="p-2 rounded-lg border border-primary/50 text-primary hover:bg-primary hover:text-background-dark transition-all"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >contact_support</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="group flex flex-col bg-background-light dark:bg-emerald-950/10 border border-emerald-900/10 rounded-xl overflow-hidden jade-glow transition-all duration-300"
+            >
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Hand carved stone Buddha head in natural light"
+                  src="/image copy.png"
+                />
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3
+                  class="text-lg font-bold mb-1 group-hover:text-primary transition-colors"
+                >
+                  Zenith Head Sculpture
+                </h3>
+                <p class="text-xs italic text-slate-500 mb-4">
+                  Symbolizes absolute wisdom and enlightenment.
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xl font-black">$890</span>
+                  <button
+                    class="p-2 rounded-lg border border-primary/50 text-primary hover:bg-primary hover:text-background-dark transition-all"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >contact_support</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="group flex flex-col bg-background-light dark:bg-emerald-950/10 border border-emerald-900/10 rounded-xl overflow-hidden jade-glow transition-all duration-300"
+            >
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Green jade-like stone Buddha statue in prayer pose"
+                  src="/image copy 2.png"
+                />
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3
+                  class="text-lg font-bold mb-1 group-hover:text-primary transition-colors"
+                >
+                  Jade Heart Avalokiteshvara
+                </h3>
+                <p class="text-xs italic text-slate-500 mb-4">
+                  The bodhisattva of infinite compassion and grace.
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xl font-black">$2,100</span>
+                  <button
+                    class="p-2 rounded-lg border border-primary/50 text-primary hover:bg-primary hover:text-background-dark transition-all"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >contact_support</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="group flex flex-col bg-background-light dark:bg-emerald-950/10 border border-emerald-900/10 rounded-xl overflow-hidden jade-glow transition-all duration-300"
+            >
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Sandstone Buddha statue in earth touching mudra"
+                  src="/image copy 3.png"
+                />
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3
+                  class="text-lg font-bold mb-1 group-hover:text-primary transition-colors"
+                >
+                  Sandstone Amitabha
+                </h3>
+                <p class="text-xs italic text-slate-500 mb-4">
+                  Focuses on pure land rebirth and infinite light.
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xl font-black">$1,250</span>
+                  <button
+                    class="p-2 rounded-lg border border-primary/50 text-primary hover:bg-primary hover:text-background-dark transition-all"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >contact_support</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="group flex flex-col bg-background-light dark:bg-emerald-950/10 border border-emerald-900/10 rounded-xl overflow-hidden jade-glow transition-all duration-300"
+            >
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Close up of detailed hand carving on stone statue"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_0n6Kr4gXeNQ6kaJ8Ja26L-qDwzaXNRSddfcJ9Xt6MDaQm7NMTYGkSKiVV0UGTntBKkhFnUVTZ-CdWs0nJ_5lg6mHjtUiVSx_0nHs4f6uhw4JZq-tCmd_BER6-0DuRqUfedK0ahVBsEtwYdLRcptR1fQgNGOpZfzJpbzGkcUAHD38oggztBqhnGYNZFUCSJ7eJuyhfB3OdzerG7dnlfij9r4aGBF3Qd9cs9xUmgu0HJtYt5B18bJQgK6m-Ag8vXBNUif2bHYlK68"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="px-3 py-1 bg-primary text-background-dark text-[10px] uppercase font-black tracking-widest rounded"
+                    >Top Seller</span
+                  >
+                </div>
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3
+                  class="text-lg font-bold mb-1 group-hover:text-primary transition-colors"
+                >
+                  Medicine Buddha Granular
+                </h3>
+                <p class="text-xs italic text-slate-500 mb-4">
+                  Purification of illness and health restoration.
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xl font-black">$1,680</span>
+                  <button
+                    class="p-2 rounded-lg border border-primary/50 text-primary hover:bg-primary hover:text-background-dark transition-all"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >contact_support</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="group flex flex-col bg-background-light dark:bg-emerald-950/10 border border-emerald-900/10 rounded-xl overflow-hidden jade-glow transition-all duration-300"
+            >
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Large garden stone Buddha under a tree"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxBOcyq1sV_YwA8INhSpcfWzT_j7tWcpz0pikLRQnTIIiegV9eko25RwZIhx3UmOk6RcyBpNjOcpy755NjIms_vMBStsRTKLRihPB76CSwCLnJqVAfP7pcXsUeZ_FkC7A6gz-sLPN1XpLoEMJW3pmjkdAe8X0hgHXZDxr8frZg1vAhYO-UY2-MW3UzCa8F-viA5ko2QoatTOd9DnCqVpN8-J7DTzJPOz39kub5D3SL3zmxVVdSF2et6sYEM3oUbs6mgWrVHEsRQS0"
+                />
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3
+                  class="text-lg font-bold mb-1 group-hover:text-primary transition-colors"
+                >
+                  Guardian Garden Statue
+                </h3>
+                <p class="text-xs italic text-slate-500 mb-4">
+                  Protection and grounding for outdoor spaces.
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xl font-black">$3,400</span>
+                  <button
+                    class="p-2 rounded-lg border border-primary/50 text-primary hover:bg-primary hover:text-background-dark transition-all"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >contact_support</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="mt-16 flex items-center justify-center gap-4">
+            <button
+              class="w-10 h-10 rounded-lg bg-emerald-900/20 border border-emerald-800/40 flex items-center justify-center hover:text-primary transition-colors"
+            >
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button
+              class="w-10 h-10 rounded-lg bg-primary text-background-dark font-bold flex items-center justify-center"
+            >
+              1
+            </button>
+            <button
+              class="w-10 h-10 rounded-lg bg-emerald-900/20 border border-emerald-800/40 flex items-center justify-center hover:text-primary transition-colors"
+            >
+              2
+            </button>
+            <button
+              class="w-10 h-10 rounded-lg bg-emerald-900/20 border border-emerald-800/40 flex items-center justify-center hover:text-primary transition-colors"
+            >
+              3
+            </button>
+            <span class="px-2">...</span>
+            <button
+              class="w-10 h-10 rounded-lg bg-emerald-900/20 border border-emerald-800/40 flex items-center justify-center hover:text-primary transition-colors"
+            >
+              8
+            </button>
+            <button
+              class="w-10 h-10 rounded-lg bg-emerald-900/20 border border-emerald-800/40 flex items-center justify-center hover:text-primary transition-colors"
+            >
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Simple Footer -->
+    <footer
+      class="mt-20 border-t border-emerald-900/10 py-12 px-6 lg:px-20 text-center"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <div class="flex items-center justify-center gap-2 mb-6">
+          <span class="material-symbols-outlined text-primary"
+            >filter_vintage</span
+          >
+          <span class="font-extrabold tracking-widest uppercase"
+            >Zen Stone Statues</span
+          >
+        </div>
+        <p class="text-slate-500 text-sm max-w-lg mx-auto mb-8">
+          Every statue is a unique piece of earth's history. We ship worldwide
+          with sustainable packaging and white-glove delivery for larger
+          collections.
+        </p>
+        <div class="flex justify-center gap-6 text-slate-400">
+          <a class="hover:text-primary" href="#"
+            ><span class="material-symbols-outlined">public</span></a
+          >
+          <a class="hover:text-primary" href="#"
+            ><span class="material-symbols-outlined">mail</span></a
+          >
+          <a class="hover:text-primary" href="#"
+            ><span class="material-symbols-outlined">share</span></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
