@@ -128,10 +128,28 @@
             />
           </div>
           <button
-            class="bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold py-2 px-6 rounded-lg transition-all shadow-lg shadow-primary/10"
+            class="hidden sm:block bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold py-2 px-6 rounded-lg transition-all shadow-lg shadow-primary/10"
           >
             Inquire Now
           </button>
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-white/5 hover:bg-primary/20 text-primary transition-all"
+            onclick="document.getElementById('mobileMenuGallery').classList.toggle('hidden')"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenuGallery" class="hidden md:hidden border-t border-slate-200 dark:border-white/10 py-4 px-6">
+        <div class="flex flex-col gap-4">
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/index.html">Home</a>
+          <a class="text-sm font-medium text-primary" href="/gallery.html">Gallery</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/product.html">Collections</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/guide.html">Philosophy</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/contact.html">Contact</a>
+          <button class="bg-primary text-background-dark px-4 py-2 rounded-lg text-sm font-bold w-full mt-2">Inquire Now</button>
         </div>
       </div>
     </div>

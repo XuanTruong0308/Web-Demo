@@ -96,7 +96,7 @@
           >
         </nav>
       </div>
-      <div class="flex flex-1 justify-end gap-8">
+      <div class="flex flex-1 justify-end gap-4 md:gap-8">
         <label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
           <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
             <div
@@ -112,12 +112,30 @@
           </div>
         </label>
         <button
-          class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all"
+          class="hidden sm:flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all"
         >
           <span class="truncate">Consultation</span>
         </button>
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden p-2 rounded-lg bg-slate-200 dark:bg-[#283930] hover:bg-primary/20 text-primary transition-all"
+          onclick="document.getElementById('mobileMenuDetail').classList.toggle('hidden')"
+        >
+          <span class="material-symbols-outlined">menu</span>
+        </button>
       </div>
     </header>
+    <!-- Mobile Menu -->
+    <div id="mobileMenuDetail" class="hidden md:hidden border-t border-[#283930] py-4 px-6">
+      <div class="flex flex-col gap-4">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="/index.html">Home</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="/product.html">Collections</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="/guide.html">Feng Shui</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="/about.html">About</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="/contact.html">Contact</a>
+        <button class="bg-primary text-background-dark px-4 py-2 rounded-lg text-sm font-bold w-full mt-2">Consultation</button>
+      </div>
+    </div>
     <main class="max-w-[1200px] mx-auto px-6 lg:px-10 py-8">
       <!-- Breadcrumbs -->
       <div class="flex flex-wrap gap-2 py-4 mb-4">
@@ -145,7 +163,7 @@
             class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-xl border border-[#283930]/30 shadow-2xl"
             data-alt="Hand-carved white marble Avalokiteshvara statue main view"
             style="
-              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2kBTQfSux4Zl-n-2zDaBhZrYkH0nUACi6bPwOsmiqrx6m_XfXvKVvBkFwLTz227PJKxzjh-R_4MnER-gv-s5tQTo4g4U-M62l0bEjNvVY7XbA3O9UtcSPSK7vsDdG7Dr-xH3iJg4OsPHmb2-mamiMu9GRaZxi3W7j0iDIY7ktLyKYvXT9Ko97zuqOjFxDTA7vHWKQjb0qkmGp3PSWSg1828sZ7PO4VEmmsLQvhN4veqM1i1aCH9zXKim0t5-xfSVELoGIYdaiu6E');
+              background-image: url('/tuong_quan_am.webp');
             "
           ></div>
           <div class="grid grid-cols-4 gap-3">
@@ -153,28 +171,28 @@
               class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg border-2 border-primary cursor-pointer"
               data-alt="Close up view of the peaceful face of the statue"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0f7NAyG5QcDRKW0PQr7pu_tAQNvO71Tol8WCdHhI7-2R-F6gq8YGaSuM-SeR0KuPpMXj6qtdTMk8Ln_hP1j2XJccZyu3UDHrTINwP391MkGhfLhdZTy0-dbOQgDX_OFtOf6MoA1F56hJCZ5AmmOtU5JLvAqYI7OYrHjbA4dN3CxVOXAiphs1_gk4aU2Gp556HarqPfX88WuKhkbvfyzlFP6rZRyNkgLYI8hEecc0D0y9c6pe57Xs7ovUmR0A-rXJRGSVc0d8wql4');
+                background-image: url('/image.png');
               "
             ></div>
             <div
               class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer border border-[#283930]"
               data-alt="Side profile showing the flowing robes of the statue"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuColYq9_V_o5dkw5t99VMIfJXX3fcNzAaZ26sexLvsuMokdDKLa_9Euh3BHyUepTj7BZ7kxdfk_cps3dNE2_YpD30zEL_DdBqSbdw68YBMNR-OrHdvMB3riwlRyCIPEw4lsIhr2sr0tRDtWh7TxRGwsOigz-iO7TTyRgaN35k1bZZOvm-xmTWqvbMIwVvUKDT6ZjD-riln03YnYClPHRSdxMpRisut_BEMihgkcqzha90-fCn9EQMr1T7Oif47uYKKxVZhLT7m1uvA');
+                background-image: url('/image-copy.png');
               "
             ></div>
             <div
               class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer border border-[#283930]"
               data-alt="Detailed view of the natural marble stone grain"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9XDdg_IyLq96PeLNRujWtZe_vI6x2MEPAijWmvSHxCGWdFRpzBHOUD--kkWc3uayK1Ir-sXNtNPuK1eL6DcuFWKwC7B5uFU-qMoi9RKzOA7mogBeWv_xR7VK2sh0nu2juo651raPkRW5sRallHPJyiDtPM2OSZFHan8HZy0RTlRzbod5hV8AqzmV8WmBjd7QXBRz8AwYcNJbJNKqTWfT9WOoMGPXs-NMl1Wzki7hSKC2aogHYWEHiYswusl1QWY7kaKG1B0tbO98');
+                background-image: url('/image-copy-2.png');
               "
             ></div>
             <div
               class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer border border-[#283930]"
               data-alt="Back view of the hand-carved stone masterpiece"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmqj0mSlxqYrkCxwNDXwowRyzIEdirlk2sjXIgpA5Nvjn0WnHYo3kJV22PDzjcqFq87SSHRUObDtuSChoDVZ392VqlsLRckGqLlVr_ajiw8CB2_swXenV4ceEQZok8REH7bjYEEKcNP3rm1tKATw50cS_2m4gK8slUEFC7PmFbmC6VMDwpuF1ev-ATJ_-E4nyMAeMabp5OMgUo-wfWbWTX1LtAUv_OBpr68OmZCsZ0f--ON47byIxoZJNGbpITechxOkpZaQAp4Jk');
+                background-image: url('/image-copy-3.png');
               "
             ></div>
           </div>
@@ -305,7 +323,7 @@
               class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg border border-[#283930]/30 overflow-hidden"
               data-alt="Sitting Buddha statue in meditation pose"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJKr69gwbakSC0Z0hbpFSGYIVyMYiuTVEuPjis_DPBogyYm1ZdCfF68S08owtG3tABxVmpoFNS3SBLrV8C5Q3ejyk6tUCP-pqces4pBZbwLVvRVb8p8B299kOlVovitH5KZgsMUjgKGRCa2TzqjMyGPQBF-yVr7m3FJM4ytnUVvgDFVy_pGzYOkYteb17EIbFkjXoKfqUKqEy5EVGuL0X2iDEGCvw034PLrdD06gTHI1oW27T9FCQFXZE5wH-a0Q9jBqp0_irLFbM');
+                background-image: url('/z7429036981610_bf4c2f9573f37e2b42e752d2ff0324ee.jpg');
               "
             >
               <div
@@ -329,7 +347,7 @@
               class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg border border-[#283930]/30 overflow-hidden"
               data-alt="Green jade dragon sculpture for protection"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnCNyL60kc7-lNYlw5t4JQQ83A_48P5Vqp42SUZWWh-dfP3nJvu3nCUTEBKnMngM3FwiKQ8yN_-50qYMDla5ZbtLLgxAniSY9S5o7xrjR_yWRZhz5gOpvgresEH3FBmNpZUR9RR1dqk7Eju3r0vUfZGR9IbPAnpI69Pjx9dRJIMe8joZwhzLUmFspDTsyQw6QvdFp9bmGxUJ93y4rdZiW3zn5QBm_ZorjNvBb75qtYrCJlTKpc5bnVgPQ0ZpnV-DheVi6ol4OzeOM');
+                background-image: url('/z7429036996251_049cb874e7e8f117879f07ebc1696497.jpg');
               "
             >
               <div
@@ -353,7 +371,7 @@
               class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg border border-[#283930]/30 overflow-hidden"
               data-alt="Modern zen stone lantern for garden"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxp-uhEYtHeCcFIXUsQaNfDEygCx-GEGUUQwtQ8BnMEzkAftCDCsmXFamXilMyXyKKo1htUP85hFE-WJ3qTT00xCvzI5R8sch6kKHikVfP6Z6x8VYrxzeamf8fhCkfqHX0_7KDoaQdJp8T_Oo-bKXEL_CPL0CvTupfI2iVFNLzHyFWnzW98GiS3JH619JsujT1wE05xhAi9KL6WkgWDjQO1Qi3UJkc1_jeUIyvLuZZHHB5oOGB52nkYf3_jS2hA86ZUs475X_-UG4');
+                background-image: url('/z7429037004431_622670a5b3c12fa31c4fe0f9c30453a7.jpg');
               "
             >
               <div
@@ -377,7 +395,7 @@
               class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg border border-[#283930]/30 overflow-hidden"
               data-alt="Kuan Yin statue of compassion"
               style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIWqHTTDuzX0j4vZhhEF23AVMBa28T4a8iF2E6tjMZAwQyxDkHL1sT3nWJi7XjmVy0qA2cgpp54MYXWfLAGVEdPLlxif3i2Xv7xGLY90TNNYJk7KxUYoqP-K9PWjAxjnTQpcq1exN1QipEhWdPvNsaTK-4L4xRfO9LsgW76ZgbXAXwAE5pfscRG6pA1EKOoKl23j5FO5C8cYBbbnMyNy5uujcVuvVSFfY_R1Ox9MAasDwvxFwLOjP0rqhSfoiI_te5wnfyIIs_Djs');
+                background-image: url('/z7429037013279_ee4d0a556fc54f48dbd77353663388a2.jpg');
               "
             >
               <div

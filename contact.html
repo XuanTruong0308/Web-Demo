@@ -107,12 +107,30 @@
             >
           </nav>
           <button
-            class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-background-dark text-sm font-bold transition-transform hover:scale-105 active:scale-95"
+            class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-background-dark text-sm font-bold transition-transform hover:scale-105 active:scale-95"
           >
             <span>Free Consultation</span>
           </button>
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden p-2 rounded-lg bg-slate-200 dark:bg-[#283930] hover:bg-primary/20 text-primary transition-all"
+            onclick="document.getElementById('mobileMenuContact').classList.toggle('hidden')"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
         </div>
       </header>
+      <!-- Mobile Menu -->
+      <div id="mobileMenuContact" class="hidden md:hidden border-t border-slate-200 dark:border-[#283930] py-4 px-6 max-w-[1280px] w-full">
+        <div class="flex flex-col gap-4">
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/index.html">Home</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/gallery.html">Gallery</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/about.html">About Us</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/product.html">Showroom</a>
+          <a class="text-sm font-medium text-primary" href="/contact.html">Contact</a>
+          <button class="bg-primary text-background-dark px-4 py-2 rounded-lg text-sm font-bold w-full mt-2">Free Consultation</button>
+        </div>
+      </div>
     </div>
     <main class="w-full flex flex-col items-center py-8 px-6 lg:px-10">
       <div
