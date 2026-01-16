@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ZenStone Home - Spiritual Harmony</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#11d473",
+              "background-light": "#f6f8f7",
+              "background-dark": "#102219",
+              jade: "#11d473",
+              stone: "#283930",
+              ivory: "#f6f8f7",
+              gold: "#d4af37",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+      .masonry-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-auto-rows: 200px;
+        gap: 16px;
+      }
+      .masonry-item-large {
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-stone dark:text-ivory transition-colors duration-300"
+  >
+    <!-- Sticky Navigation -->
+    <nav
+      class="sticky top-0 z-50 w-full border-b border-stone/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center gap-10">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-3xl"
+                >filter_vintage</span
+              >
+              <h2 class="text-xl font-bold tracking-tight uppercase">
+                ZenStone
+              </h2>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+              <a
+                class="text-sm font-semibold hover:text-primary transition-colors"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="text-sm font-semibold hover:text-primary transition-colors"
+                href="/product.html"
+                >Collections</a
+              >
+              <a
+                class="text-sm font-semibold hover:text-primary transition-colors"
+                href="/guide.html"
+                >Feng Shui Guide</a
+              >
+              <a
+                class="text-sm font-semibold hover:text-primary transition-colors"
+                href="#"
+                >About</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-6">
+            <div
+              class="hidden lg:flex items-center bg-stone/10 dark:bg-stone/40 rounded-lg px-3 py-1.5 border border-stone/20"
+            >
+              <span
+                class="material-symbols-outlined text-stone/60 dark:text-ivory/60 text-lg"
+                >search</span
+              >
+              <input
+                class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-stone/40 dark:placeholder:ivory/40"
+                placeholder="Find your peace..."
+                type="text"
+              />
+            </div>
+            <button
+              class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105"
+            >
+              Shop Collection
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="relative w-full h-[90vh] flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-background-dark/40 via-background-dark/20 to-background-dark/80 z-10"
+        ></div>
+        <div
+          class="w-full h-full bg-cover bg-center"
+          data-alt="Large stone Buddha statue in a misty zen garden"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKl_3IYUYVlAD2fMXOV6tuMffpbYWiZevs0mnlxhV2MHp11EH4YkyNX0JFEOROOIQKHjdMsDXv1yBVhHLfKOXQP_8RKRKxcnrS362xQT8eimefWjs10YWepVqbAtKvKYdfN8UA2ZW-IM-i5cxNjEjQpX8CTZQH2t-UW3bPsZiwXhVJhACb0l2RpRYq5vGKkZX5uLnDKamlOkqCrQkp6bQtHFPup3etd4l-uD_Ib9LoFSt06LGbGzYvdPudue0omWb3nm-A6T6dZ-U');
+          "
+        ></div>
+      </div>
+      <div class="relative z-20 max-w-4xl text-center px-6">
+        <h1
+          class="text-white text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6"
+        >
+          Stone Buddha Statues – <br /><span class="text-primary italic"
+            >Peace, Prosperity</span
+          >
+          &amp; Harmony
+        </h1>
+        <p
+          class="text-ivory/90 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed"
+        >
+          Hand-carved timeless pieces designed to ground your space and elevate
+          your spiritual practice through the ancient wisdom of Feng Shui.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-primary text-background-dark px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-primary/20 hover:bg-white transition-all"
+          >
+            Explore Gallery
+          </button>
+          <button
+            class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all"
+          >
+            Consult an Expert
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Carousel Section -->
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex justify-between items-end mb-12">
+          <div>
+            <span
+              class="text-primary font-bold tracking-widest uppercase text-xs mb-2 block"
+              >Curation</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold">Featured Statues</h2>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="p-2 rounded-full border border-stone/20 hover:bg-primary/10 transition-colors"
+            >
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button
+              class="p-2 rounded-full border border-stone/20 hover:bg-primary/10 transition-colors"
+            >
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+          <!-- Product Card 1 -->
+          <div class="min-w-[300px] flex-shrink-0 snap-start group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-xl mb-4">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Amoghasiddhi Buddha Statue carved from grey basalt"
+                style="
+                  background-image: url('/tuongnho.jpg');
+                "
+              ></div>
+              <div
+                class="absolute bottom-4 left-4 bg-background-dark/60 backdrop-blur-md px-3 py-1 rounded-lg"
+              >
+                <span class="text-primary text-xs font-bold">New Arrival</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-1">Amoghasiddhi Buddha</h3>
+            <p class="text-stone/60 dark:text-ivory/60 text-sm mb-4">
+              Grey Basalt Stone • 24" Height
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-black text-primary">$1,250</span>
+              <button
+                class="p-2 bg-stone dark:bg-white/10 rounded-lg hover:bg-primary transition-colors group"
+              >
+                <span class="material-symbols-outlined text-ivory"
+                  >shopping_bag</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="min-w-[300px] flex-shrink-0 snap-start group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-xl mb-4">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Serene Guan Yin Statue in white marble"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXfd98MxoZEjulfg5tlIYwR799MecxVG2NqUEBETSypWlz_rBDpGEVzVirKuviH0NnOFIoyzey2o5-10TxDzI9EvddchXxoyLvT8pepcMPVVhVrz7h5_w1HZ7-1p45nvDVWrb-eHMU6TSGht2nv1df_qi2-44IGUUZPAKrCzOEOkej4YvJTVMZ0_qOS7hBQWefeJj3x8h6IFwQhB4vyduJ2_pqZhN8WMnT4GnV1qyLlwFAF0OXfpVPg26eiwHrjKNV7WaY0JfskUU');
+                "
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold mb-1">Guan Yin Mercy Statue</h3>
+            <p class="text-stone/60 dark:text-ivory/60 text-sm mb-4">
+              White Marble • 32" Height
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-black text-primary">$2,400</span>
+              <button
+                class="p-2 bg-stone dark:bg-white/10 rounded-lg hover:bg-primary transition-colors"
+              >
+                <span class="material-symbols-outlined text-ivory"
+                  >shopping_bag</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="min-w-[300px] flex-shrink-0 snap-start group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-xl mb-4">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Zen Meditation Monk in rough granite"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHa9IPIY755jAY41SrlwkcKjs_E46ecemMCvkUHs7fAzaCbK6kXGJekKLu-K5FSIlG72FPWyySj7iXBzUwVHipH1GAU8wYmTiBV6i9ZCyB9doamUQi7bbZX7nl62sE4bQJNpzBHOVNbHNjcmGqfEfqiyiya8k06hSgyRYxX0GOu3gzwT0qxYM-PKDZtELl69yEgNUtkijyeIea6KqAamea60zF4WJSzNs3kiLJPd3v2DepqurDrNtUSAlFQQTNbMMoZzDpH_NTNgU');
+                "
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold mb-1">Dhyana Zen Master</h3>
+            <p class="text-stone/60 dark:text-ivory/60 text-sm mb-4">
+              Aged Granite • 18" Height
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-black text-primary">$890</span>
+              <button
+                class="p-2 bg-stone dark:bg-white/10 rounded-lg hover:bg-primary transition-colors"
+              >
+                <span class="material-symbols-outlined text-ivory"
+                  >shopping_bag</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="min-w-[300px] flex-shrink-0 snap-start group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-xl mb-4">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Stone Garden Pagoda multi-tiered"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAq3dIIrMMTv0mzBoVpaBPo9wQpkgm-anJlzRu6bUA_IBo_Ir6XUz8eX8kJ3NJF8of2_peuDIvoRgFiMpmIx5I0EnqQi9ZYoJ4ERX-lFvXzaJOOibetHbcZ2PTKkivyVI1cyFOfOmPm3dpiS9mQ9YoqEa1NkdiJuEHSl3WrdEQeVvT9DU81I7bhqkVhBYFWF1w2O-i_vnp-M-9vtXl9YMshI4xui4MOxpvD6MsLO8tY3YcN5bEQ3un8vSJ2fJZOJ1suMCdUcHP2ST8');
+                "
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold mb-1">5-Tier Garden Pagoda</h3>
+            <p class="text-stone/60 dark:text-ivory/60 text-sm mb-4">
+              River Stone • 48" Height
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-black text-primary">$3,100</span>
+              <button
+                class="p-2 bg-stone dark:bg-white/10 rounded-lg hover:bg-primary transition-colors"
+              >
+                <span class="material-symbols-outlined text-ivory"
+                  >shopping_bag</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feng Shui Benefits Section -->
+    <section class="py-24 bg-stone text-ivory">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <div>
+              <span
+                class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block"
+                >The Wisdom of Elements</span
+              >
+              <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                The Harmony of <br />Feng Shui &amp; Stone
+              </h2>
+              <p class="text-ivory/70 text-lg mt-6 leading-relaxed">
+                Stone represents the Earth element, providing stability,
+                nourishment, and protection. When placed correctly, a Buddha
+                statue doesn't just decorate; it anchors the Wood element in
+                your home, creating a cycle of infinite calm.
+              </p>
+            </div>
+            <div class="grid gap-6">
+              <div
+                class="flex items-start gap-4 p-6 bg-white/5 rounded-xl border border-white/10 group hover:border-primary transition-all"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >self_improvement</span
+                >
+                <div>
+                  <h3 class="text-xl font-bold mb-1">Peace &amp; Grounding</h3>
+                  <p class="text-ivory/60 text-sm">
+                    Absorb environmental stress through the dense crystalline
+                    structure of natural stone.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 p-6 bg-white/5 rounded-xl border border-white/10 group hover:border-primary transition-all"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >payments</span
+                >
+                <div>
+                  <h3 class="text-xl font-bold mb-1">Abundance Flow</h3>
+                  <p class="text-ivory/60 text-sm">
+                    Manifest wealth and prosperity with the "Abhaya Mudra" or
+                    protection-offering gestures.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 p-6 bg-white/5 rounded-xl border border-white/10 group hover:border-primary transition-all"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >health_and_safety</span
+                >
+                <div>
+                  <h3 class="text-xl font-bold mb-1">Spiritual Protection</h3>
+                  <p class="text-ivory/60 text-sm">
+                    Create a energetic shield around your sanctuary, warding off
+                    negative "Sha Chi" flows.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative aspect-square">
+            <div
+              class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"
+            ></div>
+            <div
+              class="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl"
+              data-alt="Stone Buddha statue detail closeup showing texture"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDr3C80V3h12Yx9hM-ng4QqIDIARsc2aQZS_5f_98H7IXIQ4YRAXGaDRjPSqyLvN7gtkUAz5zee7-Xb6eDuJnJ9rXCNIjkVlOvVj0TLphs--qEaV8NGIAo_Ek_Yc1xH8epcSQazqSsYSm1PnSfLAar6-zX2pEerPDDuSkbZbyElRTlJ_SH68rlcwZANTmphO_mkcbBg7v7S_ZD8JmUahZcLchEzBPBAuK3X2v5Y5auwfgJIBgXHwDvzzNsehcHCf5ELTgE2mYY9kkc');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Masonry Preview -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Inspiration in Living</h2>
+          <p class="text-stone/60 dark:text-ivory/60 max-w-xl mx-auto">
+            See how our collectors integrate ZenStone pieces into their most
+            sacred private environments.
+          </p>
+        </div>
+        <div class="masonry-grid">
+          <div
+            class="masonry-item-large bg-cover bg-center rounded-xl overflow-hidden relative group"
+            data-alt="Buddha statue in a modern living room setting"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA40Fm4QlFM6l1XhsBfc29uFbDey2N8Z5UWkNaVG-U332Yca5zTx_cCIrnihRDQtWBorqIe2YX8ax1t44q4TaXM-QWSMuZavJL81utGM4SWIWOsbYHDvOvSIR_KVQFE1k1W52TiXXbqZF7SDoYzOmMo4fEWM_eX2xgxGUdQmS3JXoSgZ1SeGg80CvfTQAOoeaBhvOam2wa1aCNb9fGmy1vVROxRi6PcZ_oW8t-n1CBAezcC0oS5ISp-O7uJWdaZsE9H15uOt3HApmk');
+            "
+          >
+            <div
+              class="absolute inset-0 bg-stone/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <span
+                class="text-white text-sm font-bold tracking-widest uppercase"
+                >View Modern Altars</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-cover bg-center rounded-xl overflow-hidden relative group"
+            data-alt="Statue in a lush outdoor garden"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCK05jpbNstXbI8XM7nUUcM2bMaj3w-j5zMnvk2V-nmgsVKAhbQefIXbHK_REz5NcFcFNBem1hvsROmKkEwFm_z0YwC1ctAg1deEjR9YogXJisEccHTVTw507VfhKqBNGWV_YF10NwSKNOtd1dLfPSlCqlDNBNHl6GEEiOYf0xzlG3vn8Lj_wjATkVJb_LCXELfsM4jrV6vDry0miPGwO8V7WjOcF2Va-sGbCRvOte4qNm4vpFVGBPBDci9zKmi1oI2soJP0_Pjg1Y');
+            "
+          ></div>
+          <div
+            class="bg-cover bg-center rounded-xl overflow-hidden relative group"
+            data-alt="Small statue on an office desk"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_ZRO5hFWzOu7Ihxz35YVJkdHvNBaIM1GAh_piUdhOyMWGtSCTAxeni3JrgKjH_8I-tpu8FYWMt6xRTb8iCYG-m2rhCwXxJZHCKgh_euZjE8drwstHsfqoKzdAiAl8Naz-cWnPWWiNiVHeFM90-hz2ea6HeqQxshOtwpEdF4Cwn5B4r2W8kvo-RF8y3b0AnFbHmlQR3mPOuWRTFyij4p6dvno5dhxrBbzAjsOk4DOTda0QhCPirWY1ApD0B4jtkggalj5URV1cDJg');
+            "
+          ></div>
+          <div
+            class="masonry-item-large bg-cover bg-center rounded-xl overflow-hidden relative group"
+            data-alt="Detailed view of stone texture"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpUtvOditjztujHzbBVpWMjwR8QXE4yXnLVzo8TF94Tdzg9XR54o_zVBE0l1aI2tfihMhJfI9zFSWRkwTn8i7Qr5pi2x1MiNVXG20_XsSSLcGkNUFGOkya0zJUFjHys53LBnDwhUSv54G_zApjZOcogusVBmk5SQbZQD5HMyHvPvCwbNQBK1TZ9W-_cpmNQIzBNzjWR3Kn1IJYvMFs0wI6O7wRq-edmGIJWE6uaAoEVIas0-8FN5-1y5TkuHENFMsFJi4GsTyU9cs');
+            "
+          ></div>
+          <div
+            class="bg-cover bg-center rounded-xl overflow-hidden relative group"
+            data-alt="Lotus candle holder in stone"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuoriVU5JUgW75_2XozoKCkdA5vMH9DrovISsEgAun_wqWzD9_1MTIlgU50mtDrTU542GVpgoerIEadVLNPFaFjOBL4-4wMKyfyMTk0CUtO1LB2mkJ3QdYOYRPRbvyb3NEu-Du16X8JqSf4FDhGvLBuYjRn-gPQ58PtmVXpoOPKaVsFbnVO_aOJtr-4Wh7-pe3NJgE7X58jW-9afngnpkKuN1N5dFhSLEuzhn9dyCkSx_3mShs7WRj3uDcw7ikNCIyXHYOgy0-JM0');
+            "
+          ></div>
+          <div
+            class="bg-cover bg-center rounded-xl overflow-hidden relative group"
+            data-alt="Backlit statue in meditation room"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTfttE7SLFEOgXlMnutmAeDm2nCSLDG3VgQ6FL8M12PKIBs97pHb0QDeoomKZhZ1LndKsVCno3Ct-uYdLpJFkjVCz4lif3l5T0hDi-CQeZh-d9yf8wvht8dOyIO0DVnKK3AutiQLMUFjigJlY8jJNIslqZfhQ-dSztAwnzQoZHtCdbaDdyhtqB2Jcuk4X12HA7EHHlUDl1Itw3hvtMGEjIgR3U25DLX-3csiRsJitijZ-3ayys-3jzKD_3jilp3IS2e8kUHnsqJ-o');
+            "
+          ></div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="/gallery.html"
+            class="inline-block px-8 py-3 border border-stone/20 dark:border-ivory/20 rounded-lg hover:bg-primary hover:text-background-dark transition-all font-bold"
+          >
+            Join Our Community Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Slider -->
+    <section
+      class="py-24 bg-background-light dark:bg-white/5 border-y border-stone/10"
+    >
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="flex justify-center gap-1 mb-6">
+          <span class="material-symbols-outlined text-gold fill-1">star</span>
+          <span class="material-symbols-outlined text-gold fill-1">star</span>
+          <span class="material-symbols-outlined text-gold fill-1">star</span>
+          <span class="material-symbols-outlined text-gold fill-1">star</span>
+          <span class="material-symbols-outlined text-gold fill-1">star</span>
+        </div>
+        <p class="text-2xl md:text-3xl font-light italic leading-relaxed mb-8">
+          "The weight and texture of the Basalt Buddha changed the entire energy
+          of my home office. It’s more than a statue; it’s a constant reminder
+          of mindfulness in a busy world."
+        </p>
+        <div>
+          <h4 class="text-lg font-bold">Elena Rodriguez</h4>
+          <p class="text-primary text-sm font-semibold">
+            Interior Designer, NYC
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="pt-20 pb-10 bg-background-dark text-ivory">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl"
+                >filter_vintage</span
+              >
+              <h2 class="text-xl font-bold tracking-tight uppercase">
+                ZenStone
+              </h2>
+            </div>
+            <p class="text-ivory/50 text-sm leading-relaxed">
+              Curating authentic stone spiritual artifacts for modern homes
+              since 2012. Crafted with intent, delivered with peace.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6">Collections</h5>
+            <ul class="space-y-4 text-sm text-ivory/60">
+              <li>
+                <a class="hover:text-primary" href="#">Sitting Buddhas</a>
+              </li>
+              <li><a class="hover:text-primary" href="#">Garden Pagodas</a></li>
+              <li>
+                <a class="hover:text-primary" href="#">Guan Yin Selection</a>
+              </li>
+              <li>
+                <a class="hover:text-primary" href="#">Desktop Zen Sets</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6">Support</h5>
+            <ul class="space-y-4 text-sm text-ivory/60">
+              <li>
+                <a class="hover:text-primary" href="#"
+                  >Shipping &amp; Logistics</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary" href="#">Care &amp; Cleaning</a>
+              </li>
+              <li>
+                <a class="hover:text-primary" href="#">Wholesale Inquiries</a>
+              </li>
+              <li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6">Newsletter</h5>
+            <p class="text-sm text-ivory/60 mb-4">
+              Receive monthly meditation tips and exclusive arrivals.
+            </p>
+            <div class="flex">
+              <input
+                class="bg-white/10 border-none rounded-l-lg focus:ring-1 focus:ring-primary w-full text-sm"
+                placeholder="Email address"
+                type="email"
+              />
+              <button class="bg-primary text-background-dark px-4 rounded-r-lg">
+                <span class="material-symbols-outlined">send</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p class="text-xs text-ivory/30">
+            © 2024 ZenStone Spiritual Harmony. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              class="text-ivory/50 hover:text-primary transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined">public</span></a
+            >
+            <a
+              class="text-ivory/50 hover:text-primary transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined">mail</span></a
+            >
+            <a
+              class="text-ivory/50 hover:text-primary transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined">share</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
